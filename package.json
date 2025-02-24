@@ -18,10 +18,10 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
-		"@sveltejs/adapter-vercel": "^5.5.2",
-		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/adapter-vercel": "^0.0.3",
+		"@sveltejs/kit": "^2.17.2",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
-		"drizzle-kit": "^0.30.2",
+		"drizzle-kit": "^0.18.1",
 		"eslint": "^9.18.0",
 		"eslint-plugin-svelte": "^2.46.1",
 		"globals": "^15.14.0",
@@ -32,7 +32,11 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"bulma": "^1.0.3",
 		"drizzle-orm": "^0.38.4",
-		"postgres": "^3.4.5"
+		"lucide-svelte": "^0.475.0",
+		"nanoid": "^5.1.2",
+		"postgres": "^3.4.5",
+		"sass": "^1.85.0"
 	}
 }
