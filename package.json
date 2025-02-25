@@ -13,7 +13,8 @@
 		"lint": "eslint .",
 		"db:push": "drizzle-kit push",
 		"db:migrate": "drizzle-kit migrate",
-		"db:studio": "drizzle-kit studio"
+		"db:studio": "drizzle-kit studio",
+		"build-bulma": "sass --load-path=node_modules ./src/styles/override.scss ./static/app.css"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
