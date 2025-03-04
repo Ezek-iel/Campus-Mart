@@ -1,24 +1,18 @@
 <script lang='ts'>
-    import image from '../../../sample.jpg'
+    import image from '../../../sample.jpg';
+    // import {BadgeDollarSign} from 'lucide-svelte' 
 </script>
 
-<!-- ! There should be a carousel at some point here -->
-<figure><img src={image} alt="some image"></figure>
-<!-- ! -->
+<!-- !XXX Need more inspiration for this page from pinterest -->
 
 <div class="p-3">
-    <div class="block">
-        <p class="title is-2 mt-3">Glass Cubes</p>
-        <p class="subtitle is-6 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet delectus rerum, quas possimus fugiat consectetur consequuntur vel laboriosam ratione commodi, rem id explicabo! Porro, nam! Illum nostrum temporibus ab. <a href="/verify" class="button is-primary">Get</a></p>
-    </div>
-
-    <div class="block">
-        <p class="title is-4 has-text-primary-30 is-underlined">Gallery</p>
-        <div class="columns is-multiline">
-            {#each [1,2,3,4,5,6,7,8,9,10] as product}
-                <div class="column p-4"><img src={image}></div>
-            {/each}
-        </div>
+    <figure class="image">
+         <img src={image} class="has-radius-normal"/>
+    </figure>
+    <div class="block mt-3">
+        <p class="title is-2 is-spaced">Glass Cubes</p>
+        <p class="subtitle is-4 is-spaced">Very expensive glass cubes</p>
+        <p class="title is-5 has-text-weight-semibold mt-2 is-spaced">$3000</p>
+        <a href="/seller/3" class="is-underlined">Neche's Cosmetics</a>
     </div>
 </div>
-

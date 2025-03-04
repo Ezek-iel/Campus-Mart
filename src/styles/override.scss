@@ -9,6 +9,7 @@ $beige-lighter: #eff0eb;
 @use "bulma/sass" with ($family-primary: '"Open-Sans", system-ui',
     $primary: $purple, //! This will change later on
     $link: $purple);
+    $dimensions: 16 24 32 48 64 96 128 256 512;
 
 @font-face {
     font-family: 'Open-Sans';
@@ -17,6 +18,7 @@ $beige-lighter: #eff0eb;
     /* Path to your TTF file */
 }
 
-@view-transition {
-    navigation: auto
+textarea.textarea {
+    resize: none;
+    field-sizing: content;
 }

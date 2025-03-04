@@ -8,7 +8,7 @@
     <div class="control has-icons-right">
         <input
             type="text"
-            class="input is-rounded"
+            class="input"
             placeholder="Search for a product"
             value={props.value}
         />

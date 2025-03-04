@@ -21561,8 +21561,9 @@ has-background-danger.is-hoverable:active {
   src: url("/fonts/Open-Sans-Regular.ttf");
   /* Path to your TTF file */
 }
-@view-transition {
-  navigation: auto;
+textarea.textarea {
+  resize: none;
+  field-sizing: content;
 }
 
 /*# sourceMappingURL=app.css.map */
