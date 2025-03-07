@@ -1,0 +1,4 @@
+{
+    "workbench.editor.showTabs": "single",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))[!]?\\s*($TAGS)"
+}
