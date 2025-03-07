@@ -1,38 +1,26 @@
-# sv
+# Campus Mart 🛒
+A **Telegram Mini-app** directory of sellers in Covenant University and how to contact them. Built using SvelteKit, Drizzle-ORM and PostgreSQL.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+### Running Locally 🏃‍♂️
+1. Clone this project to your development machine
+1. Install all necessary dependancies
 
-## Creating a project
+    ```bash
+    npm install
+    ```
+3. Fill all neccessary environment variables in the [`.env.example`](.env.example) file
+4. Run the development server
 
-If you're seeing this, you've probably already done this step. Congrats!
+    ```bash
+    npm run dev --open
+    ```
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Feature Requests 🖊️
 
-# create a new project in my-app
-npx sv create my-app
-```
+If you have any **feature request**, please send them in the issues section and tag it **`feature-request`**
 
-## Developing
+## Contributions 🛠️
+All contributions are highly accepted and appreciated
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+**Issues**: report all issues in the issues section.  
+**Pull requests**: follow the [guide](#running-locally) on how to run the app locally on your machine. 

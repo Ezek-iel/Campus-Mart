@@ -1,5 +1,11 @@
 <script lang="ts">
     import image from "../../shared/img.png";
+    import type {PageProps} from "./$types"
+    import type {Seller} from "$lib"
+
+    let {data}: PageProps = $props();
+
+    $inspect(data);
 </script>
 
 <div class="container">
@@ -13,17 +19,19 @@
         </div>
     </div>
 
-    {#snippet productCard()}
+    <!--! XXX For things like this https://mockaroo.com will be better  -->
+
+    {#snippet productCard(seller: Seller)}
         <div class="box mt-4">
             <div class="is-flex is-gap-4 is-flex-direction-column">
                 <figure class="image">
                     <img src={image} alt="" class="has-radius-large" />
                 </figure>
                 <div>
-                    <p class="is-size-2">Product title</p>
-                    <p class="is-size-5">Product subtitle</p>
+                    <p class="is-size-2">{seller.name}</p>
+                    <p class="is-size-5">{seller.description}</p>
                     <p class="is-size-6 has-text-weight-bold my-2">$30 000</p>
-                    <a href="/seller/3"><strong>Seller</strong></a>
+                    <a href="/seller/{seller.id}"><strong>{seller.email}</strong></a>
                 </div>
                 <div>
                     <a href="/verify" class="button is-primary is-fullwidth"
@@ -36,9 +44,9 @@
 
     <div class="p-3">
         <div class="columns is-multiline">
-            {#each [1, 2, 3, 4, 5] as _}
+            {#each data.sellers as seller}
                 <div class="column is-4">
-                    {@render productCard()}
+                    {@render productCard(seller)}
                 </div>
             {/each}
         </div>
