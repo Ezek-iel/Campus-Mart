@@ -1,4 +1,5 @@
 {
-    "workbench.editor.showTabs": "single",
-    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))[!]?\\s*($TAGS)"
+    "workbench.editor.showTabs": "multiple",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))[!]?\\s*($TAGS)",
+    "workbench.editor.wrapTabs": true
 }

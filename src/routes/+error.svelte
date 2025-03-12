@@ -1,5 +1,7 @@
 <script>
     import {page} from "$app/state"
+
+    $inspect(page)
 </script>
 
 <section class="hero is-fullheight is-danger">

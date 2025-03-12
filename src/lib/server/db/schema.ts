@@ -3,7 +3,8 @@ import { pgTable, serial, text, integer, varchar, json } from 'drizzle-orm/pg-co
 export const User = pgTable('users', {
 	id: serial('id').primaryKey(),
 	matric_no: varchar({ length: 12 }).notNull(),
-	email: varchar({ length: 128 }).notNull()
+	email: varchar({ length: 128 }).notNull(),
+	chat_id: varchar({length: 16}).notNull()
 });
 
 export const Seller = pgTable("sellers", {

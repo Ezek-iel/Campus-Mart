@@ -1,7 +1,6 @@
 // place files you want to import through the `$lib` alias in this folder.
 import { validateCredentials } from "./utils/validators";
-import { getSellersInformation } from "./server/db/actions";
-import type {Seller} from "./utils/interfaces"
+import type {Seller, Product} from "./utils/types"
 
 
-export { validateCredentials, getSellersInformation, type Seller};
+export { validateCredentials, type Seller, type Product};

@@ -1,7 +1,6 @@
-//? import type {PageLoad} from "./$types
+import type { PageServerLoad } from "./$types";
+import { getProductsInformation } from "$lib/server";
 
-import { getSellersInformation } from "$lib"
-
-export const load =  function () {
-    return  getSellersInformation();
+export const load: PageServerLoad = async function () {
+    return { 'products': await getProductsInformation() }
 }
